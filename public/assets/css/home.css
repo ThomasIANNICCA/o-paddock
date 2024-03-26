@@ -1,0 +1,75 @@
+.home-section, .home-section_title, .home-section_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section_title{
+    text-align: center;
+    min-height : 500px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.home-section_title h1{
+    font-size: 3.5rem;
+}
+
+.home-section_content{
+    width: 100%;
+    background: url('../img/all-teams_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-section_content h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.ranking-section:hover, .team-section:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.ranking-section, .team-section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    box-shadow : 1px 1px 10px var(--color-black);
+    border-radius: 10px;
+    font-size: 2.5rem;
+    width : 70%;
+    height: 500px;
+    margin: 20px 0;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+
+}
+.ranking-section a, .team-section a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 25px var(--color-black);
+    color: var(--color-white);
+}
+
+.team-section{
+    background-image: url('../img/all-teams_header.jpg');
+}
+
+.ranking-section{
+    background-image: url('../img/circuit.jpg');
+}

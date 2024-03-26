@@ -1,0 +1,107 @@
+/*---------------------- HEADER-------------------*/
+.header-all-teams{
+    height : 850px;
+    background-image: url('../img/all-teams_header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.teams-section{
+    background-image: url('../img/all-teams_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.teams-section header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+/*---------------------- TEAMS DESCRIPTION-------------------*/
+.teams-section__title{
+    font-size: 3.5rem;
+}
+
+.teams-section__description{
+    font-size: 1rem;
+    margin: 0 90px;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--color-white);
+    text-align: justify;
+}
+
+/*---------------------- teams menu-------------------*/
+
+.teams-section__menu{
+
+    padding: 45px 0;
+}
+.teams-section__menu__content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 180px;;
+}
+
+.teams-section__menu__team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px var(--color-black);
+    transition: 0.1s;
+}
+
+.teams-section__menu__team:hover{
+    scale: 1.05;
+    box-shadow: 5px 5px 15px var(--color-black);
+}
+
+.teams-section__menu__team figure{
+    height: 200px;
+    width: 310px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.teams-section__menu__team img{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.teams-section__menu__team div{
+    background-color: var(--color-white);
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid var(--color-black);
+}
+.teams-section__menu__team h2{
+    font-size: 2rem;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.teams-section__menu a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 900px){
+
+.teams-section__menu__content{
+
+    margin: 50px;
+    
+}
+
+}

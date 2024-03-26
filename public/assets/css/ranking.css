@@ -1,0 +1,71 @@
+.ranking-section{
+    background-color: var(--color-white);
+}
+
+.ranking-section header, .ranking-section__content, .ranking-section_team-container, .ranking-section_drivers-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ranking-section header{
+    min-height: 500px;
+
+}
+
+.ranking-section header h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.ranking-section header p{
+    text-align: center;
+}
+
+.ranking-section header {
+    background-color: var(--color-black);
+    color : var(--color-white);
+    padding: 20px 0;
+}
+
+.ranking-section_team-container, .ranking-section_drivers-container{
+    margin: 20px 0;
+    width: 75%;
+}
+
+.ranking-section__content{
+    background-image: url('../img/all-teams_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.column-title:first-of-type{
+    width: 70%;
+}
+
+.driver-name, .team-name{
+    color: var(--color-white);
+}
+
+.driver-point, .team-point{
+    text-align: center;
+}

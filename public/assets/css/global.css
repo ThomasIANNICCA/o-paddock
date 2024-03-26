@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-black : #140f07;
+    --color-red: #FF1800;
+    --color-white : #FDFFFC;
+    --color-redbull : #1F273B;
+    --color-mercedes: #00F5D3;
+    --color-ferrari : #C20F2F;
+    --color-mclaren : #FF8000;
+    --color-aston : #01635B;
+    --color-alpine : #005CA7;
+    --color-williams : #229ACB;
+    --color-alpha-tauri : #13212F;
+    --color-alfa-romeo : #9D2235;
+    --color-haas : #DE3131;
+}
+
+.redbull{
+    background-color: var(--color-redbull);
+}
+
+.mercedes{
+    background-color: var(--color-mercedes);
+    }
+
+.ferrari{
+    background-color: var(--color-ferrari);
+}
+
+.mclaren{
+    background-color: var(--color-mclaren);
+}
+
+.aston{
+    background-color: var(--color-aston);
+}
+
+.alpine{
+    background-color: var(--color-alpine);
+}
+
+.williams{
+    background-color: var(--color-williams);
+}
+
+.alpha-tauri{
+    background-color: var(--color-alpha-tauri);
+}
+
+.alfa-romeo{
+    background-color: var(--color-alfa-romeo);
+}
+
+.haas{
+    background-color: var(--color-haas);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-white);
+    letter-spacing: 0.2rem;
+    color: var(--color-black);
+}
+
+figure{
+    margin: 0;
+}
+
+/* ----------------------------------------------------- HEADER ----------------------------------- */
+.header{
+    height: 105px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+}
+.header figure, .footer-section__img figure{
+    width: 105px;
+    height: 100%;
+    margin: 0;
+}
+
+.header figure img, .footer-section__img figure img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header_nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.header_nav ul li{
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+.header_nav ul li a{
+    text-decoration: none;
+    color: var(--color-black);
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 5px;;
+}
+
+.header_nav ul li a:hover{
+    text-decoration: none;
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.burger-menu{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+/* ----------------------------------------------------- FOOTER ----------------------------------- */
+
+.footer-section{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section__nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.footer-section p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.footer-section__nav a{
+    margin: 0 20px;
+    transform: all 300ms ease-in-out;
+}
+
+.footer-section__nav a:hover{
+    scale: 1.1;
+}
+
+
+.footer-section__nav svg{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .header_nav{
+        position: absolute;
+        left: 0;
+        top: 105px;
+        display: none;
+    }
+
+
+    .open{
+        display: block;
+    }
+
+    .header_nav ul{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        background-color: var(--color-white);
+    }
+    
+    .header_nav ul li{
+        margin: 0;
+        width: 100%;
+        height: 105px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .header_nav ul li:hover{
+        background-color: var(--color-red);
+    }
+
+    .header_nav ul li:hover a{
+        color: var(--color-white);
+    }
+    
+    .burger-menu{
+        display: block;
+    }
+}
+
+/*-------------------- ERROR 404 -------------------------------*/
+
+.error{
+    background-color: var(--color-black);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.error h1{
+    color: var(--color-white);
+}
+.error a{
+    text-decoration: none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 10px;
+    border-radius: 5px;
+    opacity : 0.8;
+}
+
+.error a:hover{
+    opacity: 1;
+}
